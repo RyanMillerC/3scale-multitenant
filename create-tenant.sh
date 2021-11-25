@@ -6,4 +6,4 @@ curl -X POST \
      -d "username=${TENANT_NAME}-tenant-admin" \
      -d "password=${TENANT_PASSWORD}" \
      --data-urlencode "email=${TENANT_NAME}@example.com" \
-     https://3scale-master.apps.ocp.example.com/master/api/providers.xml
+     "${MASTER_DOMAIN}/master/api/providers.xml"
